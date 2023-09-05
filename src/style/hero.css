@@ -1,0 +1,132 @@
+.hero_wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.hero_content,.hero_img{
+    width: 50%;
+}
+
+.hero_img img{
+    width: 100%;
+}
+
+.hero_content{
+    padding-top: 40px;
+}
+
+.hero_content h2{
+    font-size: 3rem;
+    line-height: 65px;
+}
+.hero_content p{
+    margin-top: 40px;
+    font-size: 1.1rem;
+}
+
+.highlight{
+    color: var(--primary-color);
+}
+
+.hero_btns{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+
+.primary_btn,.secondary_btn{
+    padding: 0.8rem 1.5rem;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+.primary_btn{
+    background: var(--btn-secondary-bg);
+    border: 1px solid var(--btn-primary-bg);
+}
+
+.secondary_btn{
+    background: var(--btn-primary-bg);
+}
+
+
+
+@media only screen and (max-width: 992px){
+    .hero_content h2{
+        font-size: 2rem;
+        line-height: 50px;
+    }
+  
+    
+    
+
+}
+@media only screen and (max-width: 768px){
+    .hero_content h2{
+        font-size: 1.5rem;
+        line-height: 45px;
+    }
+    .hero_content p{
+        font-size: .9rem;
+    }
+    .primary_btn,.secondary_btn{
+        font-size: .8rem;
+    }
+    .hero_content,.hero_img{
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+  
+    .hero_wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+   
+    }
+    .primary_btn,.secondary_btn{
+        font-size: .6rem;
+    }
+}
+
+@media only screen and (max-width: 450px){
+
+    .hero_wrapper {
+        width: 100%;
+    }
+    .hero_content{
+        width: 100%;
+    }
+    .hero_btns{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .primary_btn,.secondary_btn{
+       
+        padding: 0.4rem 1rem;
+        border: none;
+        outline: none;
+        color: #fff;
+        border-radius: 0.2rem;
+        cursor: pointer;
+    }
+    .hero_img{
+        margin-top: 30px;
+        width: 80%;
+    }
+    .hero_content h2{
+       display: flex;
+       text-align: center;
+       justify-content: center;
+    }
+    .hero_content p{
+        display: flex;
+        text-align: center;
+    }
+}
